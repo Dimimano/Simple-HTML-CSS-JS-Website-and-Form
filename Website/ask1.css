@@ -1,0 +1,80 @@
+body {
+  margin: 0px;
+}
+
+header{
+    color: white;
+    background-color: Black;
+    text-align: center;
+	padding: 1em;
+}
+
+nav {
+    background-color: Blue;
+    float: left;
+    width: 14%;
+	padding-bottom: 50%;
+}
+aside{
+    background-color: Blue;
+    float: right;
+    width: 14%;
+	text-align: center;
+	padding-bottom: 55%;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+table, td {
+  border: 1px solid black;
+  text-align: left;
+}
+	
+th {
+  background-color: Blue;
+  color: white;
+  border: 1px solid black;
+  text-align: left;
+}
+
+section {
+	float: right;
+    width: 70%; 
+    margin-left: 10px;	
+}
+img{
+    float: right;
+	height: 90%;
+	padding: 1%
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 900px) {
+  section,nav,aside{
+    width: 50%;
+    height: auto;
+  }
+

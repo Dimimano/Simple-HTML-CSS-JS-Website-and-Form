@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		form { 
+		background-color: lightyellow;
+		padding: 1%;
+		}
+	</style>
+		<meta charset="utf-8"/>
+		<title> Φόρμα Επικοινωνίας </title>
+	</head>
+
+	<body>
+	
+		<h1 style="text-align:center;background-color:DarkCyan ;padding:1%;color:white">Φόρμα Επικοινωνίας </h1>
+		<hr/>
+		
+		<fieldset>
+		<form action="" method="POST">
+		  <h2 style="text-align:left;">Συμπληρώστε τα παρακάτω στοιχεία </h2>
+			<table>
+				<tr>
+					<td>Ονοματεπώνυμο: </td>
+					<td> <input type="text" id="name" name="FirstName" size="30" required /> </td>
+				</tr>
+			</table>
+			</form>
+		
+		<form action="" method="POST">
+			<p>Ηλικια(διαλεξτε ενα απο τα παρακάτω):</p>
+			<input type="radio" name="age" value="Εως 17" />Εως 17<br>
+			<input type="radio" name="age" value="Απο 18 εως 30" />Απο 18 εως 30"<br>
+			<input type="radio" name="age" value="Απο 31 εως 40" />Απο 31 εως 40<br>
+			<input type="radio" name="age" value="Απο 41 εως 55" />Απο 41 εως 55<br>
+			<input type="radio" name="age" value="Απο 56 εως 65" />Απο 56 εως 65<br>
+			<input type="radio" name="age" value="Πανω απο 65" />Πανω απο 65<br>
+		</form>
+		<form method="POST">	
+			<p>Τι πληροφοριες θελετε(διαλεξτε οσα θελετε):</p>
+			<input type="checkbox" name="c1"> Ξενοδοχεια<br>
+			<input type="checkbox" name="c1"> Μουσεια<br>
+			<input type="checkbox" name="c1"> Αξιοθεατα<br>
+			<input type="checkbox" name="c1"> Εστιατορια-Φαγητα<br>
+		</form>
+		<script>
+		function hasNumbers(t){
+			  return /\d/.test(t);
+			  }
+		</script>
+		<script>		
+		function myFunction() {
+			  var checkboxs=document.getElementsByName("c1");
+				var okay=false;
+				for(var i=0,l=checkboxs.length;i<l;i++)
+					{
+					if(checkboxs[i].checked)
+					{
+						okay=true;
+						break;
+					}
+				}
+				if(!okay)alert("Please check a checkbox");
+				
+				var email = document.getElementById('email');
+				if(email.value.length > 15)alert("Email Must Be Less Than 16 Characters!");
+				var name = document.getElementById('name');
+				if(hasNumbers(name))alert("No numbers in name");
+				
+			 }
+		</script>
+		<form action="" method="POST">	
+			<p>Περιοχη που σας ενδιαφερει:</p>
+			<select id="country" name="country">
+			<option value="au">Μακεδονια</option>
+			<option value="ca">Κυκλαδες</option>
+			<option value="usa">Θρακη</option>
+			<option value="usa">Αλλη</option>
+			</select><br>
+		</form>
+		<form action="" method="POST">	
+			<br><table>
+				<tr>
+					<td>e-mail επικοινωνιας: </td>
+					<td> <input type="email" id ="email" size="30" required /> </td>
+				</tr>
+			</table>
+		</form>	
+			<br><button type="submit" onclick="myFunction()">Υποβολή-Δειξε στοιχεια</button>
+			<button type="submit">Καθαρισμα</button>
+		  </fieldset>
+	
+	</body>
+	
+</html>

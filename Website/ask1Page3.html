@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ask1.css">
+    <title>  Asap Rocky </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("video").hide();
+  });
+  $("#show").click(function(){
+    $("video").show();
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#pasarela").click(function(){
+    $('#1').fadeIn(1500).delay(2000).fadeOut(1500);
+    $('#2').delay(3500).fadeIn(1500).delay(2000).fadeOut(1500);
+    $('#3').delay(7000).fadeIn(1500).delay(1000).fadeOut(1000);
+  });
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("#animation").click(function(){
+    $("#animated").animate({
+      left: '250px',
+      height: '+=150px',
+      width: '+=150px'
+    });
+  });
+});
+</script> 
+<style>
+img.rocky {
+  padding: 1%;
+  display: none;
+  position: absolut;
+}
+</style>
+</head>
+<body>
+
+<header>
+   <h1>Legends of Rap&Trap Music</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="index.html">Rap:Biggie Smalls</a></li></br>
+    <li><a href="ask1Page2.html">Rap&Trap:Travis Scott</a></li></br>
+    <li><a href="ask1Page3.html">Rap&Trap:Asap Rocky</a></li>
+  </ul>
+</nav>
+
+<aside>  <br/> <a href="index.html">Eπιστροφη στην αρχικη σελιδα</a></aside>
+
+<section> 
+      <h1>Asap Rocky</h1>
+        <img id="animated" src="Asap Rocky.jpg" alt="Asap Rocky image" width="250" height="250" />
+        <p>
+        </p>Rakim Mayers (born October 3, 1988), known by his stage name ASAP Rocky (stylized as A$AP Rocky), is an American rapper, record producer, model, actor, and music video director. He is a member of the hip hop group A$AP Mob, from which he adopted his moniker.
+
+Rocky released his debut mixtape Live. Love. A$AP, in 2011 to critical acclaim. The success of his mixtape led to a record deal with Polo Grounds Music, RCA Records, and Sony Music Entertainment. He subsequently recorded his 2013 debut album Long. Live. A$AP, which was also well received by critics and debuted at number one on the Billboard 200. In 2015, Rocky released his second studio album titled At. Long. Last. A$AP. The album debuted at number one on the Billboard 200, making it Rocky's second consecutive album to debut at number one and has received positive reviews from music critics.
+
+Rocky has also directed music videos for himself, Danny Brown, SpaceGhostPurrp and other A$AP Mob members. Furthermore, he is a noted record producer, producing under the pseudonym Lord Flacko
+        <p>
+		<button id="pasarela">Click to check Rocky's immense fashion Knowledge</button><br><br>
+		<button id="animation">Make Rocky's Photo Larger(Animate!)</button><br><br>
+
+<img class ="rocky" src="RockySwag1.jpg" alt="Asap Rocky image" width="250" height="250" id="1"/><br>
+<img class ="rocky" src="RockySwag2.jpg" alt="Asap Rocky image" width="250" height="250" id="2"/><br>
+<img class ="rocky" src="RockySwag3.jpg" alt="Asap Rocky image" width="350" height="350" id="3"/>
+        </p> 
+		<a href="https://en.wikipedia.org/wiki/ASAP_Rocky_discography">Discography</a></br>
+</section>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="PraiseTheLord.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+
+<div class="footer">
+  <p>Copyright &copy;</p>
+</div>
+
+
+</body>
+</html>
